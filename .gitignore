@@ -9,6 +9,11 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.pnpm-store/*
+/.pnpm-store
+pnpm-lock.yaml
+docker-compose.yml
+Dockerfile.dev
 
 # testing
 /coverage

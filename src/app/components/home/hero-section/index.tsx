@@ -5,19 +5,9 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   const socialIcon = [
     {
-      img: "/images/icon/twitter-icon.svg",
-      href: "https://twitter.com",
-      icon: "Twitter",
-    },
-    {
-      img: "/images/icon/behance-icon.svg",
-      href: "https://behance.com",
-      icon: "Behance",
-    },
-    {
-      img: "/images/icon/dribble-icon.svg",
-      href: "https://dribble.com",
-      icon: "Dribble",
+      img: "/images/icon/github-icon.svg",
+      href: "https://github.com/bookmole511",
+      icon: "github-icon",
     },
   ];
   return (
@@ -46,9 +36,9 @@ const HeroSection = () => {
                 <span className="absolute bottom-2.5 right-5 w-4 h-4 bg-green-500 border-2 border-white rounded-full" />
               </div>
               <div className="flex flex-col gap-2 sm:gap-3 items-center text-center xs:items-start">
-                <h1>Elena Marsh</h1>
+                <h1>Park JaeSeok</h1>
                 <p className="text-violet-700 font-normal">
-                  Senior UI & UX Designer
+                  Full Stack Developer
                 </p>
                 <div className="flex items-center gap-2">
                   <Image
@@ -57,7 +47,7 @@ const HeroSection = () => {
                     width={20}
                     height={20}
                   />
-                  <p className="text-primary">Brooklyn, NYC</p>
+                  <p className="text-primary">Suwon, Korea</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center gap-4">
