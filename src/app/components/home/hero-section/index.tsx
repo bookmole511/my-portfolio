@@ -94,9 +94,9 @@ const HeroSection = () => {
                   onMouseEnter={()=>setIsHovered(true)}
                   onMouseLeave={()=>setIsHovered(false)}
                 >
-                  <div className="group inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]">
-                    <span className="flex items-center gap-3 bg-primary group-hover:bg-transparent py-2.5 px-6 rounded-full min-w-[180px] justify-center group">
-                      <div className="relative w-5 h-5 flex-shrink-0">
+                  <div className="group inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,#9282F8_12.17%,#F3CA4D_90.71%)]">
+                    <span className="flex items-center gap-3 bg-primary group-hover:bg-transparent py-2.5 px-6 rounded-full min-w-45 justify-center group">
+                      <div className="relative w-5 h-5 shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="52 42 88 66"

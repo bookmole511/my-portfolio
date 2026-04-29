@@ -46,7 +46,7 @@ const FeaturedWork = () => {
                   <Link 
                     href="/" 
                     className="overflow-hidden relative w-full lg:w-[68%] xl:w-[68%] 
-                              aspect-[16/10] lg:aspect-[5/3] flex-shrink-0 rounded-3xl shadow-lg"
+                              aspect-16/10 lg:aspect-5/3 shrink-0 rounded-3xl shadow-lg"
                   >
                     <Image
                       src={value?.image}
