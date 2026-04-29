@@ -42,10 +42,10 @@ const FeaturedWork = () => {
           <div className="grid grid-cols-1 border-t border-border">
             {featureWork?.map((value: any, index: number) => (
               <div key={index}>
-                <div className="group flex flex-col lg:flex-row gap-8 sm:gap-10 p-6 sm:p-10 lg:p-8 relative">
+                <div className="group flex flex-col lg:flex-row gap-4 sm:gap-12 max-w-3xl mx-auto px-4 sm:px-7 py-11">
                   <Link 
                     href="/" 
-                    className="overflow-hidden relative w-full lg:w-[68%] xl:w-[68%] 
+                    className="overflow-hidden relative w-full lg:w-[66%] xl:w-[66%] 
                               aspect-16/10 lg:aspect-5/3 shrink-0 rounded-3xl shadow-lg"
                   >
                     <Image
@@ -57,15 +57,15 @@ const FeaturedWork = () => {
                   </Link>
                   <div className="flex flex-col justify-center flex-1 py-6 lg:py-10 lg:pl-4 relative z-10">
                     <Link href="/">
-                      <h4 className="text-3xl font-semibold leading-tight mb-5 group-hover:text-primary transition-colors">
+                      <h4 className="text-2xl font-semibold leading-tight mb-5 group-hover:text-primary transition-colors">
                         {value?.title}
                       </h4>
                     </Link>
-                    <p className="text-muted-foreground text-lg sm:text-xl">
+                    <p className="text-muted-foreground text-base sm:text-base">
                       {value?.roles?.join(" • ")}
                     </p>
                     <br/>
-                    <p className=" text-primary text-lg sm:text-xl break-keep">
+                    <p className=" text-primary text-base sm:text-base break-keep">
                       {value?.description}
                     </p>
                   </div>

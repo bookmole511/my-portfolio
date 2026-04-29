@@ -5,16 +5,14 @@ const AboutMe = () => {
     "Full Stack Development",
     "Backend Architecture",
     "Django REST Framework",
-    "Spring Boot",
     "PHP & Laravel",
     "RESTful API Development",
     "Database Design & Optimization",
-    "System Design",
     "Docker & Containerization",
-    "Performance Optimization",
     "Clean Architecture",
     "Next.js & React",
     "TypeScript",
+    "AI-Augmented Development",
   ];
 
   return (

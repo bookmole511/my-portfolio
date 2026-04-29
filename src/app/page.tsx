@@ -21,7 +21,7 @@ const page = () => {
       <Experience/>
       <Divider/>
       {/* <Education/>  */}
-      <Divider/>
+      {/* <Divider/> */}
       {/* 프로젝트 프리뷰  Cloud-control ticket-relay cc */}
       <ProjectOverview/>
       <Divider/>
