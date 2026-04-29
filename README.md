@@ -1,4 +1,4 @@
-# Park JaeSeok Portfolio
+# My Portfolio
 
 박재석의 개인 포트폴리오 웹사이트입니다. Full Stack Developer로서의 소개, 주요 기술 스택, 경력, 대표 프로젝트, 포트폴리오 PDF 다운로드와 연락처 접근을 한 페이지에서 확인할 수 있도록 구성했습니다.
 
