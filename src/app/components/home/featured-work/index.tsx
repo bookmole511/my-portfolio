@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import DownloadButton from "@/components/ui/downloadButton";
 
 const FeaturedWork = () => {
   const [featureWork, setFeatureWork] = useState<any>(null);
@@ -31,43 +31,50 @@ const FeaturedWork = () => {
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">
                 Featured work
               </p>
-              <Button
+              <DownloadButton
                 variant={"outline"}
                 className="h-auto py-3 px-5"
-                nativeButton={false}
-                render={<Link href={"/"}>Download Portfolio</Link>}
+                fileName="2026_ParkJaeseok_Portfolio.pdf"
+                label="Download Portfolio"
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 border-t border-border">
-            {featureWork?.map((value: any, index: number) => {
-              const isRightCol = index % 2 === 1;
-
-              return (
-                <div
-                  key={index}
-                  className={`group flex flex-col gap-3.5 sm:gap-5 p-3.5 sm:p-6 ${isRightCol ? "md:border-l md:border-border" : ""}`}
-                >
-                  <Link href={"/"} className="overflow-hidden">
+          <div className="grid grid-cols-1 border-t border-border">
+            {featureWork?.map((value: any, index: number) => (
+              <div key={index}>
+                <div className="group flex flex-col lg:flex-row gap-8 sm:gap-10 p-6 sm:p-10 lg:p-8 relative">
+                  <Link 
+                    href="/" 
+                    className="overflow-hidden relative w-full lg:w-[68%] xl:w-[68%] 
+                              aspect-[16/10] lg:aspect-[5/3] flex-shrink-0 rounded-3xl shadow-lg"
+                  >
                     <Image
                       src={value?.image}
-                      alt="Image"
-                      width={490}
-                      height={300}
-                      className="w-full h-full group-hover:scale-105 transition-all duration-300 ease-in-out"
+                      alt={value?.title || "Project Image"}
+                      fill
+                      className="object-contain group-hover:scale-102 transition-all duration-700 ease-out p-4"
                     />
                   </Link>
-                  <div className="flex flex-col gap-1 sm:gap-2 px-2">
-                    <Link href={"/"}>
-                      <h4>{value?.title}</h4>
+                  <div className="flex flex-col justify-center flex-1 py-6 lg:py-10 lg:pl-4 relative z-10">
+                    <Link href="/">
+                      <h4 className="text-3xl font-semibold leading-tight mb-5 group-hover:text-primary transition-colors">
+                        {value?.title}
+                      </h4>
                     </Link>
-                    <div className="flex">
-                      <p>{value?.roles?.join(", ")}</p>
-                    </div>
+                    <p className="text-muted-foreground text-lg sm:text-xl">
+                      {value?.roles?.join(" • ")}
+                    </p>
+                    <br/>
+                    <p className=" text-primary text-lg sm:text-xl break-keep">
+                      {value?.description}
+                    </p>
                   </div>
                 </div>
-              );
-            })}
+                {index !== featureWork.length - 1 && (
+                  <div className="border-b border-border mx-6 sm:mx-10 lg:mx-12" />
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -2,16 +2,10 @@ import { NextResponse } from "next/server";
 
 const featureWork = [
     {
-        title: "Branding + Web Design for Cleaning Services",
-        description: "Developed a modern brand identity and a responsive web experience tailored for a professional cleaning company, focused on clarity and usability.",
-        roles: ["UX Designer", "Framer Designer"],
-        image: "/images/feature-work/feature-img-1.png"
-    },
-    {
-        title: "Brand Identity for a Health Care Company",
-        description: "Created a distinctive visual identity and design language to build trust and empathy for a forward-thinking health care provider.",
-        roles: ["UX Designer", "Framer Designer"],
-        image: "/images/feature-work/feature-img-2.png"
+        title: "Active Directory Information Synchronization System",
+        description: "Active Directory 인사정보 연동 시스템 (ADIS)은 MariaDB의 부서 및 직원 정보를 기준으로 Active Directory를 자동으로 구축하고 동기화하는 시스템입니다.",
+        roles: ["Full-stack Developer"],
+        image: "/images/feature-work/adis-main-image.png"
     }
 ]
 

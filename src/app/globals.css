@@ -56,8 +56,16 @@ body {
 
 @theme {
   --breakpoint-xs: 500px;
+  --animate-sweep-to-color: sweep-to-color 0.6s ease-in-out forwards;
 }
-
+@keyframes sweep-to-color {
+  from {
+    clip-path: inset(0 0 0 0);     /* 처음엔 전체 white */
+  }
+  to {
+    clip-path: inset(0 0 0 100%);   /* 오른쪽부터 완전히 사라짐 → color 드러남 */
+  }
+}
 @layer utilities {
   .container {
     @apply w-full max-w-[70.9rem] mx-auto mt-0 mb-0 py-0 sm:px-7 px-5;
