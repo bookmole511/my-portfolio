@@ -1,20 +1,24 @@
 import { Badge } from "@/components/ui/badge";
 
 const AboutMe = () => {
-  const skills = [
+  const main_skills = [
     "Full Stack Development",
     "Backend Architecture",
-    "Django REST Framework",
-    "PHP & Laravel",
     "RESTful API Development",
-    "Database Design & Optimization",
-    "Docker & Containerization",
-    "Clean Architecture",
+    "PHP & Laravel",
+    "Django REST Framework",
     "Next.js & React",
     "TypeScript",
-    "AI-Augmented Development",
+    "Javascript",
   ];
-
+  const sub_skills = [
+    "Java & Spring Boot",
+    "Database Design & Optimization",
+    "Clean Architecture",
+    "Vibe Coding",
+    "Docker & Containerization",
+    
+  ];
   return (
     <section>
       <div className="container">
@@ -49,7 +53,7 @@ const AboutMe = () => {
                 Main Skills
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-3">
-                {skills.map((skill, index) => (
+                {main_skills.map((skill, index) => (
                   <Badge
                     variant="outline"
                     key={index}
@@ -62,6 +66,26 @@ const AboutMe = () => {
                 ))}
               </div>
             </div>
+
+            <div className="flex flex-col gap-4">
+              <p className="text-sm text-primary uppercase font-medium">
+                Sub Skills
+              </p>
+              <div className="flex flex-wrap gap-2 sm:gap-3">
+                {sub_skills.map((skill, index) => (
+                  <Badge
+                    variant="outline"
+                    key={index}
+                    className="py-1.5 px-3 rounded-lg h-full border-primary/30 hover:border-primary transition-colors"
+                  >
+                    <p className="text-xs sm:text-sm font-medium text-primary">
+                      {skill}
+                    </p>
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
