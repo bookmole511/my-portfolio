@@ -21,6 +21,15 @@
 - Package Manager: pnpm
 - Runtime: Node.js 24 Alpine 기반 Docker 개발 환경
 
+
+
+## 포트폴리오 Preview
+**Live Demo**  
+[![Visit Portfolio](https://img.shields.io/badge/배포된_사이트-방문하기-0A66C2?style=for-the-badge&logo=vercel&logoColor=white)](https://my-portfolio-teal-three-70.vercel.app/)
+
+![Portfolio Main Screen](images/my-portfolio-screenshot.png)
+
+
 ## 시작하기
 
 ### 요구 사항
