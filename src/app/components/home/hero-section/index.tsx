@@ -33,7 +33,7 @@ const HeroSection = () => {
         <div className="">
           <div className="w-full h-72">
             <Image
-              src={"/images/hero-sec/banner-bg-img2.png"}
+              src={"/images/hero-sec/banner-bg-img.png"}
               alt="banner-img"
               width={1080}
               height={267}
@@ -45,7 +45,7 @@ const HeroSection = () => {
               <div className="absolute top-0 transform -translate-y-1/2">
                 <div className="relative rounded-full border-4 border-white bg-white">
                   <Image
-                    src={"/images/hero-sec/bookmole.png"}
+                    src={"/images/hero-sec/headshot.png"}
                     alt="user-img"
                     width={145}
                     height={145}

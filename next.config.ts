@@ -3,6 +3,8 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
+  turbopack: {},
+
   // Docker + Windows 환경에서 Hot Reload(Fast Refresh) 개선
   webpack: (config, { dev }) => {
     if (dev) {
